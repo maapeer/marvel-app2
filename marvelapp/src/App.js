@@ -1,33 +1,23 @@
 
-function Titre() {
-  return (
-    // Commentaire JSX
-    <h1>Marvel Characters</h1>
-  );
-}
+import Titre from './component/titre'
+import Compter from './component/nombre_total'
+import liste from './component/liste'
 
-function Compter() {
-  const characters = require('./characters.json')
-  return (
-    // Commentaire JSX
-    <h2>`Number of characters: ${characters.length}`</h2>
-  );
-}
 
-//const characters = require('./../characters.json')
+const characters = require('./../characters.json')
 
-function App() {
-  return (
-    <>
-    {/*
+Compter(characters)
+liste(characters)
+Titre()
 
-  */}
+function App(){
+  <React.StrictMode>
     <Titre></Titre>
     <Compter></Compter>
-    </>
+    <liste></liste>
+  </React.StrictMode>
   );
 }
-
 export default App;
 
 
