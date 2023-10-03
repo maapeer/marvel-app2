@@ -1,21 +1,34 @@
-function Title({ color = 'red', children, hidden = false, name='fab'}) {
-  if (hidden) {
-      return null;
-  }
 
-  return (<h1 style={{color: color}} >Hello world {name}</h1>);
+function Titre() {
+  return (
+    // Commentaire JSX
+    <h1>Marvel Characters</h1>
+  );
 }
 
+function Compter() {
+  const characters = require('./characters.json')
+  return (
+    // Commentaire JSX
+    <h2>`Number of characters: ${characters.length}`</h2>
+  );
+}
+
+//const characters = require('./../characters.json')
+
 function App() {
-return (
-  <>
-    {/* 
-        La propriété id et data-demo sont passées au composant Title grâce au spread operator.
-        La propriété color est définie dans le composant Title
-     */}
-    <Title color="red"></Title>
-  </>
-);
+  return (
+    <>
+    {/*
+
+  */}
+    <Titre></Titre>
+    <Compter></Compter>
+    </>
+  );
 }
 
 export default App;
+
+
+
