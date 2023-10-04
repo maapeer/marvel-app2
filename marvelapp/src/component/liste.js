@@ -1,4 +1,4 @@
-function AudioListener(){
+function Liste({characters}){
     const charactersList = characters.map((character,index)=>(
       <li key={index}>{character.name}</li>
     ));
@@ -9,4 +9,4 @@ function AudioListener(){
       </div>
     )
   }
-  export default AudioListener;
+  export default Liste;

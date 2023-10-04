@@ -1,4 +1,4 @@
-function Compter() {
+function Compter({characters}) {
 
     return (
       // Commentaire JSX

@@ -1,21 +1,17 @@
+import Titre from './component/titre';
+import Compter from './component/nombre_total';
+import Liste from './component/liste';
 
-import Titre from './component/titre'
-import Compter from './component/nombre_total'
-import liste from './component/liste'
 
-
-const characters = require('./../characters.json')
-
-Compter(characters)
-liste(characters)
-Titre()
+const characters = require('./characters.json')
 
 function App(){
-  <React.StrictMode>
+  return(
+  <>
     <Titre></Titre>
-    <Compter></Compter>
-    <liste></liste>
-  </React.StrictMode>
+    <Compter characters={characters}></Compter>
+    <Liste characters={characters}></Liste>
+  </>
   );
 }
 export default App;
