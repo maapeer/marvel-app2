@@ -1,11 +1,11 @@
 import { render, screen } from '@testing-library/react';
-import AboutPage from './AboutPage';
+import AboutPages from './AboutPages';
 
 test('renders About Us message', () => {
   // when
 
   // then
-  render(<AboutPage />);
+  render(<AboutPages />);
 
   // expect the document title to be "About | Marvel App"
   expect(document.title).toEqual("About | Marvel App");
