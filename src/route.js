@@ -2,6 +2,7 @@ import Layout from "./Layout";
 import AboutPages from "./pages/AboutPages";
 import ContactPages from "./pages/ContactPages";
 import CharactersPages from "./pages/CharactersPages";
+import ComparePages from "./pages/compareCharacters";
 
 import CharacterDetailPage from "./pages/CharacterDetailPage";
 import { getCharacterById, getCharacters } from "./api/character-api";
@@ -25,6 +26,10 @@ const routes = [
                         return getCharacters();
                     }
                 },
+            },
+            {
+                path: "/Compare", 
+                element: <ComparePages /> 
             },
             {
                 path: "/characters/:id",
